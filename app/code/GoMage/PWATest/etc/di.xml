@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <type name="GoMage\PWA\Model\Config\System\Widgets\WidgetsProvider">
+        <arguments>
+            <argument name="customWidgets" xsi:type="array">
+                <item name="test_message" xsi:type="array">
+                    <item name="type" xsi:type="string">test_message</item>
+                    <item name="code" xsi:type="string">test_message</item>
+                    <item name="label" xsi:type="string">Test Message</item>
+                    <item name="component" xsi:type="string"></item>
+                    <item name="plugin" xsi:type="string">@gomage/plugin-test-message</item>
+                </item>
+            </argument>
+        </arguments>
+    </type>
+</config>

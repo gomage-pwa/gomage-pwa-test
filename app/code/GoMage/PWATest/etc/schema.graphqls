@@ -1,0 +1,7 @@
+type Query {
+    testMessage: OutputMessage @resolver(class: "GoMage\\PWATest\\Model\\Resolver\\TestMessage") @doc(description: "Message") @cache(cacheIdentity: false)
+
+}
+type OutputMessage @doc(description: "Message") {
+    message:String @doc(description: "Message")
+}
